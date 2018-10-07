@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/open-sans/opensans-light-webfont.eot');
+    src: url('../fonts/open-sans/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans/opensans-light-webfont.woff') format('woff'),
+         url('../fonts/open-sans/opensans-light-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/opensans-light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot');
+    src: url('../fonts/open-sans/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/open-sans/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/open-sans/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/open-sans/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'dosisregular';
+    src: url('../fonts/dosis/dosis-regular-webfont.eot');
+    src: url('../fonts/dosis/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dosis/dosis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/dosis/dosis-regular-webfont.woff') format('woff'),
+         url('../fonts/dosis/dosis-regular-webfont.ttf') format('truetype'),
+         url('../fonts/dosis/dosis-regular-webfont.svg#dosisregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

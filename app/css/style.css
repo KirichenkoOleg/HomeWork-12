@@ -1,0 +1,775 @@
+body {
+    border: 1px solid #888888;/*в макете есть border 1px выдно на фоне темных секция*/
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 30px 20px;
+}
+
+#header .links li {
+    margin-left: 30px;    
+}
+
+#header .links a {
+    font-size: 11px;
+    color: #fff;
+    font-family: 'open_sansregular';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'dosisregular';
+}
+
+span,
+p,
+li,
+a {
+    font-family: 'open_sanslight';
+}
+
+.section-1 {
+    height: 100vh;
+    background-image: url(../img/bg-section_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;    
+}
+
+.section-1 h1 {
+    letter-spacing: 50px;
+    text-indent: 50px;/*нужно для работы с летер спасинг*/
+    color: #fefefe;
+    margin-bottom: 100px;
+}
+
+.section-1 p {
+    color: #fefefe;
+    font-size: 19px;
+}
+
+.arrow-doun {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    bottom: 30px;
+    transform: rotate(-135deg);
+    cursor: pointer;
+}
+
+.arrow-doun .fa-chevron-down {
+    transform: rotate(135deg) translateY(7px);
+}
+
+#header .navbar-toggler {
+    width: 30px;
+    padding: 0;
+    outline: none;
+}
+
+#header .navbar-toggler-icon {
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    position: relative;
+}
+
+#header .navbar-toggler-icon:before,
+#header .navbar-toggler-icon:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    left: 0;
+}
+
+#header .navbar-toggler-icon:before {
+    top: -10px;
+}
+
+#header .navbar-toggler-icon:after {
+    bottom: -10px;
+}
+/*-------------------section-2--------------------*/
+.section-2 {
+    padding: 145px 0;
+    border-bottom: 1px solid #ececec;
+}
+
+.section-2 h3 {
+    color: #181818;
+    font-size: 18px;
+    margin-bottom: px;
+}
+
+.m-bottom-80 {
+    margin-bottom: 80px;
+}
+
+.articles .col-lg-4 > p {
+    font-size: 15px;
+    line-height: 25px;
+    color: #777777;
+}
+
+.articles .blockquote p {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.m-bottom-90 {
+    margin-bottom: 90px;
+}
+
+.imageAndSkills {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-imgFoto {
+    width: 100%;
+}
+
+.skillsBlock {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    background-color: #131313;
+    padding: 40px;
+    transform: scale(0);/*появление блока из середины*/
+    opacity: 0;
+    transition-duration: .4s;/*что бы анимация работала коректно в обе стороны*/
+}
+
+.imageAndSkills:hover > .skillsBlock {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.customProgress {
+    height: 12px;
+    margin-bottom: 20px;
+    border-radius: 0;
+    background-color: #363636;
+}
+
+.bg-customPr-bar {
+    background-color: #cdcdcd;
+}
+
+.skillsTitle {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.skillsText {
+    font-size: 13px;
+    color: #fff;
+}
+
+.skillsBlock span {
+    font-size: 11px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.nameHuman {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.they-position {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+/*----------section-3-------------------------*/
+.section-3 {
+    padding: 140px 0;
+}
+
+.section-3 .nav-item h5,
+.section-5 .nav-item h5 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.section-3 .nav-item .icon {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.section-3 .nav-tabs .nav-link,
+.section-3 .nav-tabs {
+    border: none;
+}
+
+.section-3 .nav-item {
+    padding: 0;
+}
+
+.section-3 .nav-link {
+    color: #888888;
+    padding: 0;
+}
+
+.section-3 .nav-link .active {
+    color: #111111;
+}
+
+.section-3 .nav-tabs {
+    margin-bottom: 80px;
+}
+
+.section-3 .title {
+    margin-bottom: 125px;
+}
+
+@media screen and (min-width: 992px) {
+    .section-3 .nav-item {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/*-----------section-4------------------------*/
+.section-4 {
+    background-color: #111111;
+    padding: 140px 0;
+}
+
+.section-4-title {
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    text-indent: 5px;/*нужно для работы с летер спасинг*/
+}
+
+.section-4-text {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.custom-btn-sect-4 {
+    background-color: #cfcfcf;
+    color: #111111;
+    padding: 14px 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-indent: 4px;/*нужно для работы с летер спасинг*/
+}
+
+.section-4-monitor {
+    position: absolute;
+    top: -95%;
+    width: 100%;
+}
+/*-------------------section-5----------------------*/
+.section-5 {
+    padding: 140px 0 20px 0;
+}
+
+.section-5 .row img {
+    width: 100%;
+}
+
+.section-5 img.color-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.section-5 .articles > div:hover .color-image {
+    z-index: 1;
+}/*изменение картинки при наведении*/
+
+.section-5 .articles img {
+    margin-bottom: 7px !important;
+}
+
+.section-5 h2 {
+    font-size: 18px;
+    color: #111111;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-indent: 10px;/*нужно для работы с летер спасинг*/
+    font-weight: 600;
+    margin-bottom: 80px;
+}
+
+.section-5 p {
+    font-size: 15px;
+    color: #9b9b9b;
+    margin-bottom: 80px;
+}
+
+.section-5 .nav-tabs .nav-link,
+.section-5 .nav-tabs {
+    border: 1px solid transparent;
+}/*убираем бордер*/
+
+.section-5 .nav-tabs .nav-link {
+    color: #a7a7a7;
+}
+
+.section-5 .nav-item .active {
+    color: #111111;
+}
+
+.section-5 .custom-nav-tabs {
+    justify-content: center;
+    margin-bottom: 40px;
+}
+/*-------------------section-6----------------------*/
+
+.section-6 {
+    padding: 70px 0;
+    background-color: #111111;
+}
+
+.section-6 h3 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.section-6 .btn {
+    color: #111111;
+    background-color: #d1d1d1;
+    padding: 15px 40px;
+    text-transform: uppercase;
+}
+/*----------------------section-7-----------------*/
+.section-7 {
+    padding: 140px 0;
+}
+
+.section-7 .title {
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
+.section-7 [class|="icon"] {
+    font-size: 48px;
+}
+
+.section-7 h4 {
+    margin: 40px 0;
+    font-size: 14px;
+    letter-spacing: 5px;
+}
+
+.section-7 p {
+    color: #777777;
+    font-size: 16px;
+}
+
+.section-7 .choose-us div:nth-child(-n+3) {
+    margin-bottom: 90px;
+}/*выделяет первые 3 элемента*/
+
+@media screen and (max-width: 991px) {
+    .section-7 .choose-us div:nth-child(-n+3) {
+        margin: 0;
+    }
+}
+/*------------------section-8---------------------*/
+.section-8 #carouselExampleIndicators {
+    background-color: #020202;
+    padding: 140px 0;
+}
+
+.section-8 .carousel-indicators {
+    bottom: 30px;
+}
+
+.section-8 .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0 5px;
+}
+
+.section-8 .carousel-indicators li.active {
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+
+.section-8 .carousel-caption {
+    right: auto;
+    left: auto;
+    bottom: auto;
+    margin: auto;
+    width: 60%;
+}
+
+.section-8 [class|="icon"] {
+    font-size: 32px;
+}
+
+.section-8 h3 {
+    color: #ffffff;
+    margin: 25px 0 50px;
+    text-transform: uppercase;
+}
+
+.section-8 p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section-8 footer {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #4e4e4e;
+}
+
+.section-8 [class|="carousel-control"] {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    border: 50px solid transparent;
+}
+
+.section-8 .carousel-control-next {
+    border-right: 80px solid #ffffff;
+}
+
+.section-8 .carousel-control-prev {
+    border-left: 80px solid #ffffff;
+}
+
+.section-8 .fa {
+    position: absolute;
+    color: #020202;
+    font-size: 20px;
+}
+
+.section-8 .fa-chevron-right {
+    right: -60px
+}
+
+.section-8 .fa-chevron-left {
+    left: -60px
+}
+/*---------------------------section-9-----------*/
+
+.section-9 {
+    padding: 140px 0;
+}
+
+.section-9 .item img {
+    width: 100%;
+}
+
+.section-9 .img-color {
+    top: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.section-9 .img-wrapper:hover .img-color {
+    opacity: 1;
+}
+
+.section-9 .row:first-child {
+    margin-bottom: 80px;
+}
+
+.section-9 .row:first-child a {
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-family: 'dosisregular';
+    color: #999999;
+}
+
+.section-9 .item h4 {
+    font-size: 15px;
+    color: #777777;
+    letter-spacing: 5px;
+    margin: 30px 0 15px;
+    flex-grow: 1;/*что бы соблюдался один размер элементов, надо добавиь свойство родителю тоже*/
+}
+
+.section-9 .item h5 {
+    font-size: 11px;
+    color: #999999;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.section-9 .item p {
+    font-size: 15px;
+    color: #9a9a9a;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.section-9 .btn {
+    background-color: #e5e5e5;
+    color: #767676;
+    font-size: 11px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.section-9 .item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-9 .img-wrapper {
+    flex-grow: 1;/*что бы сработало необходимо задать флекс, сделать ориентацию колонку*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*--------------section-10-------------------------*/
+.section-10 {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.section-10 h3 {
+    font-size: 16px;
+    color: #4f4f4f;
+    letter-spacing: 7px;
+    text-indent: 7px;/*нужно для работы с летер спасинг*/
+    margin-bottom: 20px;
+}
+
+.section-10 form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.section-10 .customMy-input {
+    min-width: 290px;
+    margin-right: 5px;
+    border-radius: 2px;
+    border: 1px solid #dfdfdf;
+    font-size: 12px;
+    color: #767676;
+    padding: 13px;
+    letter-spacing: 4px;
+}
+
+.section-10 .custom-button,
+.section-11 .custom-button {
+    background-color: #323232;
+    border: none;
+    padding: 0 20px;
+    font-size: 13px;
+    letter-spacing: 5px;
+    text-indent: 5px;/*нужно для работы с летер спасинг, добавляет отступ справа*/
+    font-family: 'open_sansregular';
+}
+
+.section-10 .custom-button:hover {
+    background-color: rgba(50, 50, 50, 0.71);
+}
+
+.section-10 span {
+    font-size: 11px;
+    color: #c0c0c0 !important;
+}
+
+.section-10 .fa-info-circle,
+.section-11 .fa-info-circle {
+    color: #a9a9a9;
+}
+/*--------------section-11------------------------*/
+.section-11 {
+    padding: 140px 0;
+}
+
+.section-11 h2 {
+    font-size: 18px;
+    color: #111111;
+    letter-spacing: 10px;
+    text-indent: 10px;/*нужно для работы с летер спасинг, добавляет отступ справа*/
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.section-11 .custom-units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-11 .arrow-doun,
+.footer .arrow-doun {
+    width: 30px;
+    height: 30px;
+    background-color: #111111;
+    border-radius: 5px;
+    bottom: 30px;
+    transform: rotate(-135deg);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.section-11 .arrow-doun .fa {
+    color: #fff;
+    font-size: 20px;
+    transform: rotate(135deg);
+}
+
+.section-11 .custom-units h4 {
+    font-size: 12px;
+    color: #777777;
+    letter-spacing: 5px;
+    line-height: 1.6;
+}
+
+.section-11 .custom-units span {
+    text-transform: none;
+    font-size: 15px;
+    color: #444444;
+    letter-spacing: normal;
+}
+
+.section-11 .row:first-child {
+    margin-bottom: 80px;
+}
+
+.section-11 div.form-group:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-11 input,
+.section-11 textarea {
+    color: #777777;
+    font-family: 'open_sansregular';
+    letter-spacing: 4px;
+}
+
+.section-11 .form-row span {
+    color: #c1c1c1;
+    font-size: 11px;
+}
+
+.section-11 .custom-button {
+    padding: 12px 20px;
+}
+/*--------------section-12------------------------*/
+.section-12 {
+    overflow: hidden;
+}
+
+.section-12 .overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: .5s;
+}
+
+.section-12:hover .overlay {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.section-12 h3 {
+    color: #ffffff;
+    margin-top: 30px;
+}
+
+.section-12 .arrow-doun .fa-map-marker {
+    transform: rotate(135deg);
+}
+/*--------------section-13------------------------*/
+.footer {
+    background-color: #f8f8f8;
+    padding: 140px 0 30px;
+}
+
+.footer div.col-sm-12:first-child {
+    margin-bottom: 25px;
+}
+
+.footer div.col-sm-12:nth-child(2) {
+    margin-bottom: 110px;
+}
+
+.footer .arrow-doun {
+    background-color: transparent;
+    border: 1px solid #2d2d2d;
+    margin: 0 10px;
+}
+
+.footer .fa {
+    transform: rotate(135deg);
+    color: #111111;
+}
+
+.footer h3 {
+    font-size: 12px;
+    color: #202020;
+    letter-spacing: 5px;
+    text-indent: 5px;/*нужно для работы с летер спасинг, добавляет отступ справа*/
+    margin-bottom: 10px;
+}
+
+.footer span {
+    font-size: 11px;
+    color: #ababab;
+}
+
+.footer .container-fluid {
+    margin-top: 15px;
+    padding: 0 30px;
+}
+
+.footer a.custom-batton {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    border-radius: 4px;
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #c6c6c6;
+}
+
+.footer .fa-chevron-up {
+    font-size: 10px;
+    color: #f9f9f9;
+    transform: rotate(0deg);
+    margin-top: 6px;
+    display: none;
+}
+
+.footer a.custom-batton:hover .fa-chevron-up {
+    display: block;
+}
