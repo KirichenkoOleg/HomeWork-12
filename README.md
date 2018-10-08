@@ -4,7 +4,7 @@
 
 git clone https://github.com/OlegKirichenko136/HomeWork-12.git
 
-##Upload npm packages:
+## Upload npm packages:
 
 npm install
 
