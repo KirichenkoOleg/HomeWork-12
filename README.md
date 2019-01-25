@@ -2,7 +2,7 @@
 
 ## Clone the project:
 
-git clone https://github.com/OlegKirichenko136/HomeWork-12.git
+git clone https://github.com/KirichenkoOleg/HomeWork-12.git
 
 ## Upload npm packages:
 
