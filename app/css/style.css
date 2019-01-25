@@ -71,6 +71,13 @@ a {
     transform: rotate(135deg) translateY(7px);
 }
 
+.linkAnchorToSec_2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* ------------------якорная ссылка */
+}
+
 #header .navbar-toggler {
     width: 30px;
     padding: 0;

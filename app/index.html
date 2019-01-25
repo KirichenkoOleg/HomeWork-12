@@ -55,11 +55,13 @@
             </div>
             
             <div class="arrow-doun position-absolute d-flex justify-content-center align-items-center">
+                <a href="#section-2" class="linkAnchorToSec_2"></a>
                 <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </div>
+
         </section>
         
-        <section class="section-2">
+        <section class="section-2" id="section-2">
             <div class="container">
                
                 <div class="row m-bottom-80">
@@ -1048,5 +1050,20 @@
             
         </div>
     </footer>
+
+    <script>
+        // для работы якоря
+        jQuery(function($){
+
+            let $page = $('html, body');
+            $('a[href^="#section"]').click(function() {
+                $page.animate({
+                    scrollTop: $($.attr(this, 'href')).offset().top,
+                },1500);
+                return false;
+            });
+
+        });
+        </script>
 </body>
 </html>
