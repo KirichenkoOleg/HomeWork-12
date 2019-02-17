@@ -75,6 +75,7 @@ a {
     position: absolute;
     width: 100%;
     height: 100%;
+    z-index: 1;/* чтобы ссылка была поверх стрелки */
     /* ------------------якорная ссылка */
 }
 
@@ -298,23 +299,6 @@ a {
     padding: 140px 0 20px 0;
 }
 
-.section-5 .row img {
-    width: 100%;
-}
-
-.section-5 img.color-image {
-    position: absolute;
-    top: 0;
-    z-index: -1;
-}
-.section-5 .articles > div:hover .color-image {
-    z-index: 1;
-}/*изменение картинки при наведении*/
-
-.section-5 .articles img {
-    margin-bottom: 7px !important;
-}
-
 .section-5 h2 {
     font-size: 18px;
     color: #111111;
@@ -348,6 +332,32 @@ a {
     justify-content: center;
     margin-bottom: 40px;
 }
+
+.section-5 .articles {
+    justify-content: space-around;
+    /* background-color: red; */
+}
+
+.section-5 .articles .color-image {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.section-5 .articles > div:hover .color-image {
+    z-index: 1;
+}/*изменение картинки при наведении*/
+
+.section-5 .articles .blackAndWhite-image,
+.section-5 .articles .color-image {
+    width: 100%;
+}
+
+.section-5 .articles > div {
+    max-width: 33%;
+    margin-bottom: 7px !important;
+}
+
 /*-------------------section-6----------------------*/
 
 .section-6 {
@@ -687,6 +697,13 @@ a {
 .section-11 .custom-button {
     padding: 12px 20px;
 }
+
+.section-11 .pl-0_custom {
+    padding-left: 0;
+}
+.section-11 .pr-0_custom {
+    padding-right: 0;
+}
 /*--------------section-12------------------------*/
 .section-12 {
     overflow: hidden;
@@ -779,4 +796,164 @@ a {
 
 .footer a.custom-batton:hover .fa-chevron-up {
     display: block;
+}
+
+/* media quares */
+
+@media (max-width: 1199px) {
+    .section-2 .skillsBlock {
+        padding: 20px;
+    }
+    .section-2 .skillsTitle {
+        margin-bottom: 15px;
+    }
+    .section-2 .customProgress {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-2 {
+        padding: 100px 0;
+    }
+    .section-2 .skillsText {
+        display: none;
+    }
+    .section-2 .skillsBlock > div {
+        margin-bottom: 10px;
+    }
+
+    .section-3 {
+        padding: 100px 0;
+    }
+
+    .section-5 {
+        padding-top: 100px;
+    }
+    .section-5 .title {
+        margin-bottom: 40px;
+    }
+    .section-5 .text {
+        margin-bottom: 50px;
+    }
+
+    .section-7 {
+        padding: 80px 0;
+    }
+    .section-7 .title {
+        margin-bottom: 60px;
+    }
+    .section-7 h4 {
+        margin: 15px 0;
+    }
+    .section-7 p {
+        margin-bottom: 20px;
+    }
+
+    .section-8 #carouselExampleIndicators {
+        padding: 100px 0;
+    }
+
+    .section-9 .row .item-wrapper:not(:last-child) {
+        /* для всех кроме последнего элемента */
+        margin-bottom: 20px;
+    }
+    .section-9 .img-wrapper {
+        align-items: center;
+    }
+    .section-9 .img-wrapper h4 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    .section-9 .img-wrapper h5 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .section-9 .img-wrapper p {
+        margin-bottom: 15px;
+    }
+
+    .section-11 {
+        padding: 100px 0;
+    }
+    .section-11 h2 {
+        margin-bottom: 60px;
+    }
+    .section-11 .custom-units {
+        flex-direction: column;
+    }
+    .section-11 .arrow-doun {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section-2 .section-2__title {
+        text-align: center;
+    }
+    .section-2 .skillsBlock {
+        padding: 40px;
+    }
+    .section-2 .skillsText {
+        display: block;
+    }
+    .section-2 .skillsBlock > div {
+        margin-bottom: 10px;
+    }
+    .section-2 .skillsBlock > div {
+        margin-bottom: 20px;
+    }
+    .section-2 .skillsBlock .skillsTitle {
+        font-size: 22px;
+        text-align: center;
+    }
+    .section-2 .skillsBlock .skillsText {
+        font-size: 16px;
+        text-align: center;
+    }
+    .section-2 .skillsBlock > span {
+        font-size: 16px;
+    }
+    .section-2 .nameHuman {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .section-2 .they-position {
+        margin-bottom: 40px;
+    }
+    .section-3 .blockquote__customInfo {
+        text-align: center;
+    }
+
+    .section-4 {
+        padding-top: 80px;
+    }
+    .section-4 .section-4-monitor {
+        position: relative;
+        top: -40%;
+    }
+    .section-4 .item_first {
+        text-align: center;
+        order: 2;
+    }
+    .section-4 .item_second {
+        order: 1;
+    }
+
+    .section-11 .form-group {
+        padding: 0 5px;
+    }
+    .section-11 .form-group input[type="text"] {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-11 .custom-units {
+        text-align: center;
+    }
+    .section-11 .custom-units:not(:last-child) {
+        /* для всех кроме последнего элемента */
+        margin-bottom: 20px;
+    }
 }
