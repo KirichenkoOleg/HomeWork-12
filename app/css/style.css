@@ -354,7 +354,7 @@ a {
 }
 
 .section-5 .articles > div {
-    max-width: 33%;
+    /* max-width: 33%; */
     margin-bottom: 7px !important;
 }
 
@@ -940,6 +940,9 @@ a {
         order: 1;
     }
 
+    .section-11 .custom-units {
+        text-align: center;
+    }
     .section-11 .form-group {
         padding: 0 5px;
     }
@@ -949,9 +952,9 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-    .section-11 .custom-units {
+    /* .section-11 .custom-units {
         text-align: center;
-    }
+    } */
     .section-11 .custom-units:not(:last-child) {
         /* для всех кроме последнего элемента */
         margin-bottom: 20px;
